@@ -1,10 +1,10 @@
-# VoltShare — Sub-Metering Installation for Landlords
+# HamiltonVolt — Sub-Metering Installation for Landlords
 
-> VoltShare installs certified electricity sub-meters in multi-unit rental properties across Hamilton and Burlington, Ontario. Landlords with shared meters lose $300+ per month subsidizing tenants' hydro. We fix that.
+> HamiltonVolt installs certified electricity sub-meters in multi-unit rental properties across Hamilton and Burlington, Ontario. Landlords with shared meters lose $300+ per month subsidizing tenants' hydro. We fix that.
 
 ## What We Do
 
-VoltShare installs Measurement Canada certified sub-meters that give each unit in a multi-unit property its own electricity meter. The meters clip onto existing wiring — no rewiring, no cutting, no damage to the property. Installation takes one day. Tenants pay for what they use. Landlords stop subsidizing hydro.
+HamiltonVolt installs Measurement Canada certified sub-meters that give each unit in a multi-unit property its own electricity meter. The meters clip onto existing wiring — no rewiring, no cutting, no damage to the property. Installation takes one day. Tenants pay for what they use. Landlords stop subsidizing hydro.
 
 ## Service Area
 
@@ -43,7 +43,7 @@ Yes. Ontario Regulation 394/10 under the Electricity Act allows landlords to ins
 No. Meters use current transformers that clip around existing wires. Nothing is cut, spliced, or modified. The installation is fully reversible.
 
 **Do I need to change my leases?**
-For existing tenants with "electricity included" leases, landlords must provide written notice and reduce rent by a corresponding amount per Reg. 394/10. For new tenants, the lease is written without included electricity. VoltShare provides notice templates.
+For existing tenants with "electricity included" leases, landlords must provide written notice and reduce rent by a corresponding amount per Reg. 394/10. For new tenants, the lease is written without included electricity. HamiltonVolt provides notice templates.
 
 **What types of properties work?**
 Any multi-unit residential property with 2 or more units sharing a single electricity meter. This includes duplexes, triplexes, fourplexes, townhouse blocks, and apartment buildings.

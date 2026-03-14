@@ -1,19 +1,19 @@
 /**
- * VoltShare — Site Configuration
+ * HamiltonVolt — Site Configuration
  * ================================
  * Edit the values below and reload the page.
  * The script at the bottom of index.html reads this object
  * and injects values into the DOM automatically.
  *
- * For SEO meta tags and structured data (JSON-LD), you must also
- * update the <head> section of index.html directly — those are
- * read by crawlers before JS executes.
+ * The hydration script updates the browser DOM (title, meta, JSON-LD)
+ * from these values. Note: crawlers may read the static HTML before
+ * JS runs, so keep the defaults in index.html in sync for SEO.
  */
 
 const SITE_CONFIG = {
 
   // ── Business identity ──────────────────────────────────
-  businessName: "VoltShare",
+  businessName: "HamiltonVolt",
   tagline: "Sub-metering installation",
   serviceArea: "Hamilton & Burlington, ON",
 
@@ -25,7 +25,7 @@ const SITE_CONFIG = {
   // WhatsApp number (digits only, with country code, no + sign)
   whatsappNumber: "19055550199",
   // Pre-filled WhatsApp message
-  whatsappMessage: "Hi VoltShare, I'd like a free quote for sub-metering my property.",
+  whatsappMessage: "Hi HamiltonVolt, I'd like a free quote for sub-metering my property.",
 
   // ── Address & location ─────────────────────────────────
   address: {
@@ -56,7 +56,7 @@ const SITE_CONFIG = {
   showTestimonials: true,
   testimonials: [
     {
-      quote: "I was paying $480/month in hydro for a fourplex and couldn't figure out why. VoltShare installed meters in one afternoon — turns out one unit was using more than the other three combined. Paid for itself in two months.",
+      quote: "I was paying $480/month in hydro for a fourplex and couldn't figure out why. HamiltonVolt installed meters in one afternoon — turns out one unit was using more than the other three combined. Paid for itself in two months.",
       name: "Mark T.",
       detail: "Fourplex owner, Hamilton Mountain",
       stars: 5,

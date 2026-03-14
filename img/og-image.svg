@@ -33,7 +33,7 @@
 
   <!-- Logo text -->
   <text x="140" y="118" font-family="Georgia, serif" font-size="28" fill="white">
-    <tspan fill="#10B981">Volt</tspan><tspan fill="white">Share</tspan>
+    <tspan fill="#10B981">Hamilton</tspan><tspan fill="white">Volt</tspan>
   </text>
 
   <!-- Headline -->
@@ -67,6 +67,6 @@
 
   <!-- Bottom bar -->
   <rect x="0" y="570" width="1200" height="60" fill="#10B981" opacity="0.08"/>
-  <text x="80" y="607" font-family="system-ui, sans-serif" font-size="16" fill="#94A3B8">voltshare.ca</text>
+  <text x="80" y="607" font-family="system-ui, sans-serif" font-size="16" fill="#94A3B8">hamiltonvolt.ca</text>
   <text x="1120" y="607" font-family="system-ui, sans-serif" font-size="16" fill="#94A3B8" text-anchor="end">Free inspection · No obligation · Licensed in Ontario</text>
 </svg>
