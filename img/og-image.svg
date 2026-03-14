@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#1E293B"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0.5" y1="0" x2="0.5" y2="1">
+      <stop offset="0%" stop-color="#10B981" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#10B981" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Subtle grid pattern -->
+  <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
+    <path d="M 60 0 L 0 0 0 60" fill="none" stroke="white" stroke-opacity="0.03" stroke-width="1"/>
+  </pattern>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+
+  <!-- Emerald glow bottom-right -->
+  <ellipse cx="1000" cy="530" rx="400" ry="250" fill="url(#glow)"/>
+
+  <!-- Accent line -->
+  <rect x="80" y="180" width="48" height="3" rx="1.5" fill="#10B981"/>
+
+  <!-- Logo icon -->
+  <g transform="translate(80, 80)">
+    <rect x="0" y="0" width="48" height="48" rx="10" fill="#0F172A" stroke="#10B981" stroke-width="2"/>
+    <path d="M27.5 6L15 26h8L19.5 42 33 22h-8L27.5 6z" fill="#10B981"/>
+  </g>
+
+  <!-- Logo text -->
+  <text x="140" y="118" font-family="Georgia, serif" font-size="28" fill="white">
+    <tspan fill="#10B981">Volt</tspan><tspan fill="white">Share</tspan>
+  </text>
+
+  <!-- Headline -->
+  <text x="80" y="240" font-family="Georgia, serif" font-size="52" fill="white" font-weight="400">
+    Stop Paying Your
+  </text>
+  <text x="80" y="300" font-family="Georgia, serif" font-size="52" fill="white" font-weight="400">
+    Tenants' Electricity
+  </text>
+
+  <!-- Subheadline -->
+  <text x="80" y="360" font-family="system-ui, sans-serif" font-size="22" fill="#94A3B8">
+    Certified sub-metering for Hamilton &amp; Burlington landlords
+  </text>
+
+  <!-- Stats bar -->
+  <rect x="80" y="420" width="1040" height="1" fill="#10B981" opacity="0.2"/>
+
+  <text x="80" y="480" font-family="system-ui, sans-serif" font-size="36" fill="#10B981" font-weight="700">$300+</text>
+  <text x="80" y="510" font-family="system-ui, sans-serif" font-size="16" fill="#94A3B8">/month savings per property</text>
+
+  <text x="420" y="480" font-family="system-ui, sans-serif" font-size="36" fill="white" font-weight="700">1 Day</text>
+  <text x="420" y="510" font-family="system-ui, sans-serif" font-size="16" fill="#94A3B8">typical installation</text>
+
+  <text x="700" y="480" font-family="system-ui, sans-serif" font-size="36" fill="white" font-weight="700">$0</text>
+  <text x="700" y="510" font-family="system-ui, sans-serif" font-size="16" fill="#94A3B8">monthly fees</text>
+
+  <!-- CTA -->
+  <rect x="950" y="455" width="170" height="50" rx="10" fill="#10B981"/>
+  <text x="1035" y="487" font-family="system-ui, sans-serif" font-size="18" fill="#0F172A" font-weight="700" text-anchor="middle">Free Quote</text>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="570" width="1200" height="60" fill="#10B981" opacity="0.08"/>
+  <text x="80" y="607" font-family="system-ui, sans-serif" font-size="16" fill="#94A3B8">voltshare.ca</text>
+  <text x="1120" y="607" font-family="system-ui, sans-serif" font-size="16" fill="#94A3B8" text-anchor="end">Free inspection · No obligation · Licensed in Ontario</text>
+</svg>
