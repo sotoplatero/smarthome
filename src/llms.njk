@@ -1,0 +1,46 @@
+---
+permalink: /llms.txt
+eleventyExcludeFromCollections: true
+---
+# {{ site.businessName }} — Sub-Metering Installation for Landlords
+
+> {{ site.businessName }} installs certified electricity sub-meters in multi-unit rental properties across {{ site.serviceArea }}. Landlords with shared meters lose $300+ per month subsidizing tenants' hydro. We fix that.
+
+## What We Do
+
+{{ site.businessName }} installs Measurement Canada certified sub-meters that give each unit in a multi-unit property its own electricity meter. The meters clip onto existing wiring — no rewiring, no cutting, no damage to the property. Installation takes one day. Tenants pay for what they use. Landlords stop subsidizing hydro.
+
+## Service Area
+
+**Hamilton, Ontario**: {{ site.neighbourhoods.hamilton | join(", ") }}.
+
+**Burlington, Ontario**: {{ site.neighbourhoods.burlington | join(", ") }}.
+
+## How It Works
+
+1. **Free On-Site Quote** — A technician visits the property, inspects the electrical panel, and provides a flat-rate quote the same day. No cost, no obligation.
+2. **One-Day Installation** — ESA-certified electricians install Measurement Canada certified meters using current transformers that clip onto existing wires. No rewiring, no modification to existing electrical systems. Typical install: 4–6 hours, power off for under 1 hour.
+3. **Monitor & Save** — Each meter connects to the internet and reports usage to an online dashboard. Landlords and tenants see real-time consumption data. Monthly PDF reports are generated automatically.
+
+## Key Facts
+
+- **Legal basis**: Ontario Regulation 394/10 under the Electricity Act
+- **Meters**: Measurement Canada certified (legally billable)
+- **Electricians**: ESA-certified, licensed and insured in Ontario
+- **Pricing**: {{ site.pricing.perUnit }} per unit (one-time), no monthly fees
+- **ROI**: Most landlords recoup cost in {{ site.pricing.roiMonths }} months
+- **Properties served**: Duplexes, triplexes, fourplexes, townhouse blocks, apartment buildings (2+ units sharing one meter)
+
+## Contact
+
+- Website: {{ site.siteUrl }}
+- WhatsApp: Message for a free quote
+- Phone: Available on website
+- Service hours: Flexible, including evenings and weekends for inspections
+
+## Common Questions
+{% for item in site.faq %}
+
+**{{ item.question }}**
+{{ item.schemaAnswer }}
+{% endfor %}

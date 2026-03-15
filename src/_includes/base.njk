@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Electricity Sub-Metering for Rental Properties | {{ site.serviceArea }} | {{ site.businessName }}</title>
+  <meta name="description" content="Stop paying your tenants' hydro. {{ site.businessName }} installs certified sub-meters in {{ site.serviceArea }} rental properties. Save $300+/month. Free on-site quote.">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0F172A">
+  <link rel="canonical" href="{{ site.siteUrl }}/">
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36 36'><rect x='1' y='1' width='34' height='34' rx='8' fill='%230F172A' stroke='%2310B981' stroke-width='1.5'/><path d='M20.5 5L11 19.5h6L14.5 31 25 16.5h-6L20.5 5z' fill='%2310B981'/></svg>" type="image/svg+xml">
+
+  <!-- Geo meta for local SEO -->
+  <meta name="geo.region" content="CA-ON">
+  <meta name="geo.placename" content="{{ site.address.city }}">
+  <meta name="geo.position" content="{{ site.coordinates.lat }};{{ site.coordinates.lng }}">
+  <meta name="ICBM" content="{{ site.coordinates.lat }}, {{ site.coordinates.lng }}">
+
+  <!-- Open Graph — critical for WhatsApp link previews -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ site.siteUrl }}/">
+  <meta property="og:title" content="Stop Paying Your Tenants' Electricity | {{ site.businessName }}">
+  <meta property="og:description" content="{{ site.serviceArea }} landlords save $300+/month with certified sub-metering. Free on-site quote, no obligation.">
+  <meta property="og:image" content="{{ site.ogImageUrl }}">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="en_CA">
+  <meta property="og:site_name" content="{{ site.businessName }}">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Stop Paying Your Tenants' Electricity | {{ site.businessName }}">
+  <meta name="twitter:description" content="{{ site.serviceArea }} landlords save $300+/month with certified sub-metering. Free on-site quote.">
+  <meta name="twitter:image" content="{{ site.ogImageUrl }}">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind v4 CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <!-- Custom styles -->
+  <style type="text/tailwindcss">
+    @theme {
+      --color-navy: #0F172A;
+      --color-navy-light: #1E293B;
+      --color-navy-mid: #334155;
+      --color-emerald: #10B981;
+      --color-emerald-dark: #059669;
+      --color-amber: #F59E0B;
+      --color-surface: #F8FAFC;
+      --color-surface-white: #FFFFFF;
+      --color-text-light: #E2E8F0;
+      --color-text-muted: #94A3B8;
+      --font-serif: 'DM Serif Display', Georgia, serif;
+      --font-sans: 'Inter', system-ui, sans-serif;
+    }
+
+    * { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--font-sans);
+      color: var(--color-navy);
+      overflow-x: hidden;
+    }
+
+    .font-serif { font-family: var(--font-serif); }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(32px);
+      transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+
+    @media (prefers-reduced-motion: reduce) {
+      .reveal { opacity: 1; transform: none; transition: none; }
+      .animate-bounce { animation: none; }
+    }
+
+    .stagger-1 { transition-delay: 0.08s; }
+    .stagger-2 { transition-delay: 0.16s; }
+    .stagger-3 { transition-delay: 0.24s; }
+    .stagger-4 { transition-delay: 0.32s; }
+
+    .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.4s cubic-bezier(0.16, 1, 0.3, 1), padding 0.4s ease; }
+    .faq-answer.open { max-height: 300px; }
+    .faq-icon { transition: transform 0.3s ease; }
+    .faq-item.active .faq-icon { transform: rotate(45deg); }
+
+    .cta-glow { transition: transform 0.2s ease, box-shadow 0.2s ease; }
+    .cta-glow:hover { transform: scale(1.05); box-shadow: 0 0 30px rgba(16, 185, 129, 0.4), 0 0 60px rgba(16, 185, 129, 0.15); }
+
+    .nav-scrolled { box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3); }
+
+    .grain::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      opacity: 0.03;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    .hero-overlay {
+      background: linear-gradient(to bottom, rgba(15, 23, 42, 0.85) 0%, rgba(15, 23, 42, 0.7) 50%, rgba(15, 23, 42, 0.95) 100%);
+    }
+
+    .accent-line { width: 48px; height: 3px; background: var(--color-emerald); border-radius: 2px; }
+
+    @media (min-width: 768px) {
+      .step-connector::after {
+        content: '';
+        position: absolute;
+        top: 24px;
+        left: calc(50% + 24px);
+        width: calc(100% - 48px);
+        height: 2px;
+        background: linear-gradient(to right, var(--color-emerald), var(--color-emerald-dark));
+        opacity: 0.3;
+      }
+      .step-connector:last-child::after { display: none; }
+    }
+  </style>
+
+  <!-- Schema.org LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "{{ site.businessName }}",
+    "description": "Certified sub-metering installation for multi-unit landlords in {{ site.serviceArea | safe }}.",
+    "url": "{{ site.siteUrl }}",
+    "telephone": "{{ site.phoneLink }}",
+    "priceRange": "$$",
+    "areaServed": [
+      {
+        "@type": "City",
+        "name": "Hamilton",
+        "containedInPlace": { "@type": "AdministrativeArea", "name": "Ontario" },
+        "containsPlace": [
+          {%- for n in site.neighbourhoods.hamilton %}
+          { "@type": "Place", "name": "{{ n }}" }{{ "," if not loop.last }}
+          {%- endfor %}
+        ]
+      },
+      {
+        "@type": "City",
+        "name": "Burlington",
+        "containedInPlace": { "@type": "AdministrativeArea", "name": "Ontario" },
+        "containsPlace": [
+          {%- for n in site.neighbourhoods.burlington %}
+          { "@type": "Place", "name": "{{ n }}" }{{ "," if not loop.last }}
+          {%- endfor %}
+        ]
+      }
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      {%- if site.address.street %}
+      "streetAddress": "{{ site.address.street }}",
+      {%- endif %}
+      "addressLocality": "{{ site.address.city }}",
+      "addressRegion": "{{ site.address.province }}",
+      "addressCountry": "{{ site.address.country }}"
+      {%- if site.address.postalCode %},
+      "postalCode": "{{ site.address.postalCode }}"
+      {%- endif %}
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": {{ site.coordinates.lat }},
+      "longitude": {{ site.coordinates.lng }}
+    },
+    "serviceType": "Electrical Sub-Metering Installation",
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Sub-Metering Services",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Free Sub-Metering Inspection",
+            "description": "On-site assessment of your property for sub-metering viability. Includes flat-rate quote."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Sub-Meter Installation",
+            "description": "Measurement Canada certified meter installation for multi-unit residential properties."
+          }
+        }
+      ]
+    }
+  }
+  </script>
+
+  <!-- Schema.org FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {%- for item in site.faq %}
+      {
+        "@type": "Question",
+        "name": "{{ item.question }}",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "{{ item.schemaAnswer }}"
+        }
+      }{{ "," if not loop.last }}
+      {%- endfor %}
+    ]
+  }
+  </script>
+
+  <noscript>
+    <style>.reveal { opacity: 1 !important; transform: none !important; }</style>
+  </noscript>
+</head>
+<body class="bg-surface antialiased">
+  {{ content | safe }}
+
+  <script>
+    // Scroll reveal
+    const revealElements = document.querySelectorAll('.reveal');
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+    revealElements.forEach(el => revealObserver.observe(el));
+
+    // Nav shadow on scroll
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('nav-scrolled', window.scrollY > 20);
+    }, { passive: true });
+
+    // FAQ accordion
+    document.querySelectorAll('.faq-toggle').forEach(button => {
+      button.addEventListener('click', () => {
+        const item = button.closest('.faq-item');
+        const answer = item.querySelector('.faq-answer');
+        const isOpen = item.classList.contains('active');
+        document.querySelectorAll('.faq-item').forEach(faq => {
+          faq.classList.remove('active');
+          faq.querySelector('.faq-answer').classList.remove('open');
+          faq.querySelector('.faq-toggle').setAttribute('aria-expanded', 'false');
+        });
+        if (!isOpen) {
+          item.classList.add('active');
+          answer.classList.add('open');
+          button.setAttribute('aria-expanded', 'true');
+        }
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,16 +1,11 @@
 /**
  * HamiltonVolt — Site Configuration
  * ================================
- * Edit the values below and reload the page.
- * The script at the bottom of index.html reads this object
- * and injects values into the DOM automatically.
- *
- * The hydration script updates the browser DOM (title, meta, JSON-LD)
- * from these values. Note: crawlers may read the static HTML before
- * JS runs, so keep the defaults in index.html in sync for SEO.
+ * Edit the values below and run `npm run build` to regenerate the site.
+ * All values are injected at build time into every page via Eleventy.
  */
 
-const SITE_CONFIG = {
+export default {
 
   // ── Business identity ──────────────────────────────────
   businessName: "HamiltonVolt",
@@ -83,13 +78,52 @@ const SITE_CONFIG = {
 
   // ── Images (local paths) ───────────────────────────────
   images: {
-    hero: "img/hero-apartment-interior.jpg",
-    inspection: "img/step-inspection-property.jpg",
-    installation: "img/step-installation-electrician.jpg",
-    monitoring: "img/step-monitoring-dashboard.jpg",
-    cta: "img/cta-hamilton-skyline.jpg",
-    ogImage: "img/og-image.svg",
+    hero: "/img/hero-apartment-interior.jpg",
+    inspection: "/img/step-inspection-property.jpg",
+    installation: "/img/step-installation-electrician.jpg",
+    monitoring: "/img/step-monitoring-dashboard.jpg",
+    cta: "/img/cta-hamilton-skyline.jpg",
+    ogImage: "/img/og-image.svg",
   },
+
+  // ── Neighbourhoods (for footer & schema) ──────────────
+  neighbourhoods: {
+    hamilton: [
+      "Hamilton Mountain", "Downtown Hamilton", "Westdale", "Stoney Creek",
+      "Dundas", "Ancaster", "Bartonville", "Binbrook", "Crown Point",
+      "Kirkendall", "Stipley", "Delta", "Corktown", "Beasley", "Landsdale"
+    ],
+    burlington: [
+      "Downtown Burlington", "Aldershot", "Appleby", "Brant Hills",
+      "Tyandaga", "Orchard", "Palmer", "Headon Forest", "Millcroft",
+      "Roseland", "Shoreacres", "Elizabeth Gardens", "Maple",
+      "Mountainside", "Central Burlington"
+    ],
+  },
+
+  // ── FAQ ────────────────────────────────────────────────
+  faq: [
+    {
+      question: "Is sub-metering legal in Ontario?",
+      answer: "Yes. Ontario Regulation 394/10 under the <em>Electricity Act</em> gives landlords the right to install sub-meters and bill tenants for individual electricity usage, as long as meters are Measurement Canada certified and tenants receive proper notice. We handle all compliance paperwork.",
+      schemaAnswer: "Yes. Ontario Regulation 394/10 under the Electricity Act gives landlords the right to install sub-meters and bill tenants for individual electricity usage, as long as meters are Measurement Canada certified and tenants receive proper notice."
+    },
+    {
+      question: "How much does it cost?",
+      answer: "Typical installations range from $300–$600 per unit depending on your panel layout. A fourplex usually costs $1,200–$2,000 total. Most landlords recoup the full cost in 3–5 months through reduced hydro bills. You get the exact number during the free inspection — no surprises after.",
+      schemaAnswer: "Typical installations range from $300–$600 per unit depending on your panel layout. A fourplex usually costs $1,200–$2,000 total. Most landlords recoup the full cost in 3–5 months through reduced hydro bills."
+    },
+    {
+      question: "Do I need to change my leases?",
+      answer: 'For existing tenants with "electricity included" leases, you must provide written notice and reduce rent by a corresponding amount per Reg. 394/10. For new tenants, you simply write the lease without included electricity. We provide notice templates and walk you through the process.',
+      schemaAnswer: "For existing tenants with electricity included leases, you must provide written notice and reduce rent by a corresponding amount per Reg. 394/10. For new tenants, you simply write the lease without included electricity."
+    },
+    {
+      question: "What types of properties work?",
+      answer: "Duplexes, triplexes, fourplexes, townhouse blocks, and apartment buildings across Hamilton and Burlington. If you have 2+ units sharing one meter, sub-metering will almost certainly work. The free inspection confirms it for your specific property.",
+      schemaAnswer: "Duplexes, triplexes, fourplexes, townhouse blocks, and apartment buildings. If you have 2 or more units sharing one meter, sub-metering will almost certainly work."
+    }
+  ],
 
   // ── Footer ─────────────────────────────────────────────
   copyrightYear: "2026",

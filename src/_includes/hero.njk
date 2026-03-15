@@ -1,0 +1,45 @@
+{% set waUrl = site | waUrl %}
+<section class="relative min-h-screen flex items-center justify-center grain overflow-hidden">
+  <div class="absolute inset-0">
+    <img src="{{ site.images.hero }}"
+         alt="Modern apartment interior with warm lighting"
+         width="1920" height="1280"
+         fetchpriority="high"
+         class="w-full h-full object-cover">
+    <div class="hero-overlay absolute inset-0"></div>
+  </div>
+
+  <div class="absolute inset-0 opacity-[0.04]" style="background-image: linear-gradient(rgba(255,255,255,.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.1) 1px, transparent 1px); background-size: 80px 80px;"></div>
+
+  <div class="relative z-10 max-w-4xl mx-auto px-5 text-center pt-20 pb-24">
+    <div class="reveal">
+      <p class="inline-flex items-center gap-2 text-emerald text-sm font-semibold tracking-widest uppercase mb-6">
+        <span class="w-8 h-px bg-emerald"></span>
+        {{ site.serviceArea }}
+        <span class="w-8 h-px bg-emerald"></span>
+      </p>
+    </div>
+    <h1 class="reveal stagger-1 font-serif text-5xl sm:text-6xl md:text-7xl text-white leading-[1.08] mb-6" style="text-wrap: balance;">
+      Stop Paying Your<br>Tenants' Electricity
+    </h1>
+    <p class="reveal stagger-2 text-lg sm:text-xl text-text-muted max-w-2xl mx-auto mb-10 leading-relaxed">
+      Landlords with shared meters lose <span class="text-emerald font-semibold">$300+ every month</span> subsidizing their tenants' hydro. Sub-metering puts each unit on its own meter so you only pay for common areas.
+    </p>
+    <div class="reveal stagger-3 flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
+      <a href="{{ waUrl }}"
+         class="cta-glow inline-flex items-center gap-2.5 bg-emerald hover:bg-emerald-dark text-navy font-bold text-lg px-8 py-4 rounded-xl">
+        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.5.5 0 00.611.611l4.458-1.495A11.952 11.952 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-2.387 0-4.607-.798-6.382-2.147l-.446-.344-2.635.883.883-2.635-.344-.446A9.935 9.935 0 012 12C2 6.486 6.486 2 12 2s10 4.486 10 10-4.486 10-10 10z"/></svg>
+        Get My Free Quote
+      </a>
+    </div>
+    <p class="reveal stagger-4 text-text-muted text-sm tracking-wide">
+      Free on-site inspection &middot; Quote same day &middot; Licensed in Ontario
+    </p>
+  </div>
+
+  <div class="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 reveal">
+    <div class="w-6 h-10 border-2 border-white/20 rounded-full flex justify-center pt-2">
+      <div class="w-1 h-2.5 bg-emerald rounded-full animate-bounce"></div>
+    </div>
+  </div>
+</section>
