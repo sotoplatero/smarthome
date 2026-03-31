@@ -32,375 +32,232 @@ layout: base.njk
 </section>
 {% endif %}
 
-{# ========== PROBLEM SECTION: "SOUND FAMILIAR?" ========== #}
+{# ========== THE ACTUAL PROBLEM ========== #}
 <section class="py-20 sm:py-28 bg-surface-white">
-  <div class="max-w-6xl mx-auto px-5">
-    <div class="max-w-3xl mx-auto text-center mb-16">
-      <div class="accent-line mx-auto mb-6 reveal"></div>
+  <div class="max-w-3xl mx-auto px-5">
+    <div class="mb-14">
+      <div class="accent-line mb-6 reveal"></div>
       <h2 class="reveal font-serif text-3xl sm:text-4xl md:text-[2.75rem] text-navy leading-tight mb-5" style="text-wrap: balance;">
-        Sound Familiar?
+        Here's what I keep hearing from landlords
       </h2>
-      <p class="reveal stagger-1 text-text-muted text-lg">
-        If your building has one meter for multiple units, you already know these problems.
+    </div>
+
+    <div class="space-y-10">
+      <div class="reveal">
+        <h3 class="font-semibold text-navy text-lg mb-2">"I have no idea who's using what."</h3>
+        <p class="text-text-muted leading-relaxed">
+          You've got one hydro bill. Four units. One of them is running two space heaters all winter. You're paying for all of it and you can't prove anything.
+        </p>
+      </div>
+
+      <div class="reveal">
+        <h3 class="font-semibold text-navy text-lg mb-2">"I tried splitting it evenly and it blew up."</h3>
+        <p class="text-text-muted leading-relaxed">
+          Someone's working from home with three monitors. Someone else is gone 12 hours a day. Even splits are never even. Everyone ends up resentful.
+        </p>
+      </div>
+
+      <div class="reveal">
+        <h3 class="font-semibold text-navy text-lg mb-2">"Hydro keeps going up but I can't raise rent fast enough."</h3>
+        <p class="text-text-muted leading-relaxed">
+          Ontario caps rent increases. Hydro doesn't care about Ontario caps. Every year the gap between what you charge and what you actually pay gets wider.
+        </p>
+      </div>
+    </div>
+
+    <div class="reveal mt-12 bg-surface rounded-2xl p-7 border border-slate-100">
+      <p class="text-navy leading-relaxed">
+        This isn't a hypothetical. A landlord on the Mountain had a fourplex. His hydro was $680/month. Two tenants had electric space heaters going nonstop. He had no way to know until we put meters on. Turned out one unit was using almost half the building's electricity.
+      </p>
+    </div>
+  </div>
+</section>
+
+{# ========== IS THIS EVEN LEGAL? ========== #}
+<section class="py-16 sm:py-20 bg-surface">
+  <div class="max-w-3xl mx-auto px-5">
+    <div class="reveal">
+      <div class="w-14 h-14 rounded-xl bg-emerald/10 flex items-center justify-center mb-6">
+        <svg class="w-7 h-7 text-emerald" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0012 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75z"/></svg>
+      </div>
+      <h2 class="font-serif text-3xl sm:text-4xl text-navy leading-tight mb-3" style="text-wrap: balance;">
+        "Am I actually allowed to charge tenants for hydro?"
+      </h2>
+      <p class="text-text-muted text-lg leading-relaxed mb-8">
+        Yeah. Ontario Regulation 394/10 under the Electricity Act says you can install sub-meters and bill tenants for their own usage. Most landlords never look into it because they assume it's complicated or not allowed. It's neither.
       </p>
     </div>
 
-    <div class="grid sm:grid-cols-2 gap-6">
-      {# Pain 1: Rising costs #}
-      <div class="reveal stagger-1 group bg-surface rounded-2xl p-7 border border-slate-100 hover:border-emerald/30 hover:shadow-lg hover:shadow-emerald/5 transition-colors transition-shadow duration-300">
-        <div class="w-12 h-12 rounded-xl bg-emerald/10 flex items-center justify-center mb-5 group-hover:bg-emerald/20 transition-colors">
-          <svg class="w-6 h-6 text-emerald" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18.75a60.07 60.07 0 0115.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 013 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 00-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 01-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 003 15h-.75M15 10.5a3 3 0 11-6 0 3 3 0 016 0zm3 0h.008v.008H18V10.5zm-12 0h.008v.008H6V10.5z"/></svg>
-        </div>
-        <h3 class="font-semibold text-navy text-lg mb-2">"My hydro bill keeps climbing"</h3>
-        <p class="text-text-muted text-sm leading-relaxed">You pay more every quarter but can't tell which unit is driving the cost up.</p>
-      </div>
+    <div class="reveal stagger-1 mb-6">
+      <p class="text-navy font-semibold mb-5">Here's what you need:</p>
+    </div>
 
-      {# Pain 2: Tenants waste #}
-      <div class="reveal stagger-2 group bg-surface rounded-2xl p-7 border border-slate-100 hover:border-emerald/30 hover:shadow-lg hover:shadow-emerald/5 transition-colors transition-shadow duration-300">
-        <div class="w-12 h-12 rounded-xl bg-emerald/10 flex items-center justify-center mb-5 group-hover:bg-emerald/20 transition-colors">
-          <svg class="w-6 h-6 text-emerald" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M15.362 5.214A8.252 8.252 0 0112 21 8.25 8.25 0 016.038 7.048 8.287 8.287 0 009 9.6a8.983 8.983 0 013.361-6.867 8.21 8.21 0 003 2.48z"/><path stroke-linecap="round" stroke-linejoin="round" d="M12 18a3.75 3.75 0 00.495-7.467 5.99 5.99 0 00-1.925 3.546 5.974 5.974 0 01-2.133-1A3.75 3.75 0 0012 18z"/></svg>
-        </div>
-        <h3 class="font-semibold text-navy text-lg mb-2">"Tenants blast heat all winter"</h3>
-        <p class="text-text-muted text-sm leading-relaxed">When electricity is "included," tenants have zero reason to conserve. You absorb the waste.</p>
+    <div class="space-y-4">
+      <div class="reveal stagger-1 bg-surface-white rounded-xl p-6 border border-slate-100">
+        <p class="text-navy font-semibold mb-2">Written notice to existing tenants</p>
+        <p class="text-text-muted text-sm leading-relaxed">I give you the template, ready to go. You don't have to write anything.</p>
       </div>
-
-      {# Pain 3: Splitting fights #}
-      <div class="reveal stagger-3 group bg-surface rounded-2xl p-7 border border-slate-100 hover:border-emerald/30 hover:shadow-lg hover:shadow-emerald/5 transition-colors transition-shadow duration-300">
-        <div class="w-12 h-12 rounded-xl bg-emerald/10 flex items-center justify-center mb-5 group-hover:bg-emerald/20 transition-colors">
-          <svg class="w-6 h-6 text-emerald" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z"/></svg>
-        </div>
-        <h3 class="font-semibold text-navy text-lg mb-2">"Splitting the bill causes fights"</h3>
-        <p class="text-text-muted text-sm leading-relaxed">Even splits are never fair. Someone always uses more. Everyone resents the arrangement.</p>
+      <div class="reveal stagger-2 bg-surface-white rounded-xl p-6 border border-slate-100">
+        <p class="text-navy font-semibold mb-2">A rent reduction for tenants who had hydro included</p>
+        <p class="text-text-muted text-sm leading-relaxed">The regulation requires it. It's basically: you lower rent by roughly what hydro was costing per unit, and then they pay their own. You come out ahead because the heavy users were costing you way more than the average.</p>
       </div>
-
-      {# Pain 4: Rent cap squeeze #}
-      <div class="reveal stagger-4 group bg-surface rounded-2xl p-7 border border-slate-100 hover:border-emerald/30 hover:shadow-lg hover:shadow-emerald/5 transition-colors transition-shadow duration-300">
-        <div class="w-12 h-12 rounded-xl bg-emerald/10 flex items-center justify-center mb-5 group-hover:bg-emerald/20 transition-colors">
-          <svg class="w-6 h-6 text-emerald" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3v11.25A2.25 2.25 0 006 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0118 16.5h-2.25m-7.5 0h7.5m-7.5 0l-1 3m8.5-3l1 3m0 0l.5 1.5m-.5-1.5h-9.5m0 0l-.5 1.5M9 11.25v1.5M12 9v3.75m3-6v6"/></svg>
-        </div>
-        <h3 class="font-semibold text-navy text-lg mb-2">"I can't raise rent enough"</h3>
-        <p class="text-text-muted text-sm leading-relaxed">Rent increases are capped. Hydro keeps rising. The gap between what you charge and what you pay grows every year.</p>
+      <div class="reveal stagger-3 bg-surface-white rounded-xl p-6 border border-slate-100">
+        <p class="text-navy font-semibold mb-2">For new tenants</p>
+        <p class="text-text-muted text-sm leading-relaxed">You just write the lease without included electricity. Done.</p>
       </div>
     </div>
 
-    <p class="reveal text-center text-navy font-semibold mt-12 text-lg">
-      One shared meter always means <span class="text-emerald">you</span> pay for someone else's hydro.
+    <p class="reveal mt-8 text-text-muted text-lg leading-relaxed">
+      I walk you through the whole thing. It takes about 10 minutes to explain.
     </p>
   </div>
 </section>
 
-{# ========== REGULATORY CLARITY SECTION ========== #}
-<section class="py-16 sm:py-20 bg-surface">
-  <div class="max-w-3xl mx-auto px-5 text-center">
-    <div class="reveal">
-      <div class="w-14 h-14 rounded-xl bg-emerald/10 flex items-center justify-center mx-auto mb-6">
-        <svg class="w-7 h-7 text-emerald" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0012 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75z"/></svg>
-      </div>
-      <h2 class="font-serif text-3xl sm:text-4xl text-navy leading-tight mb-3" style="text-wrap: balance;">
-        "I don't even know if I'm allowed to charge tenants for hydro"
-      </h2>
-      <p class="text-emerald font-semibold text-lg mb-6">Short answer: yes, you can.</p>
-      <p class="text-text-muted text-lg leading-relaxed max-w-2xl mx-auto mb-8">
-        Ontario Regulation 394/10 under the <em>Electricity Act</em> gives landlords the right to install sub-meters and bill tenants for their individual electricity usage. Many landlords never start because they assume it's complicated or illegal. It's neither.
-      </p>
-    </div>
-
-    <div class="reveal stagger-1 grid sm:grid-cols-3 gap-4 max-w-2xl mx-auto">
-      <div class="bg-surface-white rounded-xl p-5 border border-slate-100">
-        <svg class="w-5 h-5 text-emerald mx-auto mb-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
-        <p class="text-navy text-sm font-semibold">Ontario Reg. 394/10</p>
-        <p class="text-text-muted text-xs mt-1">Your legal right to sub-meter</p>
-      </div>
-      <div class="bg-surface-white rounded-xl p-5 border border-slate-100">
-        <svg class="w-5 h-5 text-emerald mx-auto mb-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
-        <p class="text-navy text-sm font-semibold">Notice templates</p>
-        <p class="text-text-muted text-xs mt-1">We provide them, ready to sign</p>
-      </div>
-      <div class="bg-surface-white rounded-xl p-5 border border-slate-100">
-        <svg class="w-5 h-5 text-emerald mx-auto mb-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
-        <p class="text-navy text-sm font-semibold">Lease guidance</p>
-        <p class="text-text-muted text-xs mt-1">What to change and what to keep</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-{# ========== HOW IT WORKS: "THIS IS HOW SIMPLE IT IS" ========== #}
+{# ========== HOW IT WORKS ========== #}
 <section class="relative py-20 sm:py-28 bg-navy grain overflow-hidden">
   <div class="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-emerald/[0.03] to-transparent pointer-events-none"></div>
-  <div class="relative z-10 max-w-6xl mx-auto px-5">
-    <div class="text-center mb-16">
-      <div class="accent-line mx-auto mb-6 reveal"></div>
+  <div class="relative z-10 max-w-3xl mx-auto px-5">
+    <div class="mb-14">
+      <div class="accent-line mb-6 reveal"></div>
       <h2 class="reveal font-serif text-3xl sm:text-4xl md:text-[2.75rem] text-white leading-tight mb-5" style="text-wrap: balance;">
-        This Is How Simple It Is
+        This is the whole process. There's not much to it.
       </h2>
-      <p class="reveal stagger-1 text-text-muted text-lg max-w-xl mx-auto">
-        No electrician. No permits. No power shutoff. One-time install.
-      </p>
     </div>
 
-    <div class="grid md:grid-cols-3 gap-8 md:gap-6">
-      <div class="reveal stagger-1 relative text-center step-connector">
-        <div class="w-12 h-12 rounded-full bg-emerald text-navy font-bold text-xl flex items-center justify-center mx-auto mb-5 shadow-lg shadow-emerald/20">1</div>
-        <h3 class="font-semibold text-white text-lg mb-2">15-Minute Visit</h3>
-        <p class="text-text-muted text-sm leading-relaxed">We look at your electrical panel and confirm sub-metering works for your property. Takes 15 minutes. Costs you nothing.</p>
-      </div>
-      <div class="reveal stagger-2 relative text-center step-connector">
-        <div class="w-12 h-12 rounded-full bg-emerald text-navy font-bold text-xl flex items-center justify-center mx-auto mb-5 shadow-lg shadow-emerald/20">2</div>
-        <h3 class="font-semibold text-white text-lg mb-2">We Clip the Meters On</h3>
-        <p class="text-text-muted text-sm leading-relaxed">Under 1 hour. The meter clamps around the wire like a clip. Nothing gets cut. Nothing gets modified. Your panel stays exactly as it is.</p>
-      </div>
-      <div class="reveal stagger-3 relative text-center step-connector">
-        <div class="w-12 h-12 rounded-full bg-emerald text-navy font-bold text-xl flex items-center justify-center mx-auto mb-5 shadow-lg shadow-emerald/20">3</div>
-        <h3 class="font-semibold text-white text-lg mb-2">Open Your Dashboard</h3>
-        <p class="text-text-muted text-sm leading-relaxed">That same day, you see each unit's consumption on your phone. You know exactly who uses what.</p>
-      </div>
-    </div>
-
-    <div class="reveal mt-14 max-w-2xl mx-auto">
-      <div class="bg-emerald/10 rounded-xl py-5 px-6 text-center">
-        <p class="text-emerald font-semibold text-sm mb-1">
-          No cutting. No wiring. No permits. 100% reversible.
-        </p>
-        <p class="text-text-muted text-xs">
-          If you ever want to remove the meters, the clip comes off and your panel goes back to exactly how it was.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
-{# ========== PROCESS DETAIL 1: INSPECTION ========== #}
-<section class="py-20 sm:py-24 bg-surface-white">
-  <div class="max-w-6xl mx-auto px-5">
-    <div class="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
+    <div class="space-y-12">
       <div class="reveal">
-        <div class="relative rounded-2xl overflow-hidden aspect-[4/3]">
-          <img src="{{ site.images.inspection }}" alt="Residential property in Hamilton, Ontario — front exterior view" width="800" height="600" loading="lazy" class="w-full h-full object-cover">
-          <div class="absolute inset-0 bg-gradient-to-t from-navy/30 to-transparent"></div>
+        <div class="flex items-start gap-5">
+          <div class="w-10 h-10 rounded-full bg-emerald text-navy font-bold text-lg flex items-center justify-center shrink-0 shadow-lg shadow-emerald/20">1</div>
+          <div>
+            <h3 class="font-semibold text-white text-lg mb-3">I come look at your panel.</h3>
+            <p class="text-text-muted leading-relaxed">
+              Takes 15 minutes. I check if your building's wiring lets me isolate each unit's circuit. Most buildings do. If yours doesn't, I'll tell you on the spot and you don't owe me anything.
+            </p>
+          </div>
         </div>
       </div>
-      <div>
-        <div class="reveal inline-flex items-center gap-2 bg-emerald/10 text-emerald text-sm font-semibold px-4 py-1.5 rounded-full mb-5">
-          <span class="w-6 h-6 rounded-full bg-emerald text-navy text-xs font-bold flex items-center justify-center">1</span>
-          Free Inspection
-        </div>
-        <h2 class="reveal stagger-1 font-serif text-3xl sm:text-4xl text-navy leading-tight mb-5">
-          We Come to You. You Pay Nothing.
-        </h2>
-        <p class="reveal stagger-2 text-text-muted text-lg leading-relaxed mb-6">
-          We visit your property, look at your panel, and tell you on the spot whether sub-metering works. If it does, you get a flat-rate price before we leave. If it doesn't, you've lost nothing but 15 minutes.
-        </p>
-        <ul class="space-y-3">
-          <li class="reveal stagger-2 flex items-start gap-3">
-            <svg class="w-5 h-5 text-emerald mt-0.5 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
-            <span class="text-navy text-sm"><strong>No deposit, no credit card</strong> — the inspection is genuinely free</span>
-          </li>
-          <li class="reveal stagger-3 flex items-start gap-3">
-            <svg class="w-5 h-5 text-emerald mt-0.5 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
-            <span class="text-navy text-sm"><strong>Flat-rate quote same day</strong> — you know the exact cost before you decide anything</span>
-          </li>
-          <li class="reveal stagger-4 flex items-start gap-3">
-            <svg class="w-5 h-5 text-emerald mt-0.5 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
-            <span class="text-navy text-sm"><strong>Evenings & weekends available</strong> — we work around your schedule</span>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
 
-{# ========== PROCESS DETAIL 2: INSTALLATION ========== #}
-<section class="py-20 sm:py-24 bg-surface">
-  <div class="max-w-6xl mx-auto px-5">
-    <div class="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
-      <div class="order-2 md:order-1">
-        <div class="reveal inline-flex items-center gap-2 bg-emerald/10 text-emerald text-sm font-semibold px-4 py-1.5 rounded-full mb-5">
-          <span class="w-6 h-6 rounded-full bg-emerald text-navy text-xs font-bold flex items-center justify-center">2</span>
-          Installation
+      <div class="reveal">
+        <div class="flex items-start gap-5">
+          <div class="w-10 h-10 rounded-full bg-emerald text-navy font-bold text-lg flex items-center justify-center shrink-0 shadow-lg shadow-emerald/20">2</div>
+          <div>
+            <h3 class="font-semibold text-white text-lg mb-3">I clip the meters on.</h3>
+            <p class="text-text-muted leading-relaxed">
+              The meter is a small clamp that goes around the wire — like a clothespin around a cable. I don't cut anything. I don't touch the conductor. Your tenants won't know I was there. Takes about an hour for a typical fourplex.
+            </p>
+          </div>
         </div>
-        <h2 class="reveal stagger-1 font-serif text-3xl sm:text-4xl text-navy leading-tight mb-5">
-          It's a Clip, Not Construction
-        </h2>
-        <p class="reveal stagger-2 text-text-muted text-lg leading-relaxed mb-6">
-          The meter is a current transformer that clamps around the existing wire. Think of it like a clamp — it goes around the cable without touching the conductor inside. We don't cut, splice, or modify your electrical system in any way.
-        </p>
-        <ul class="space-y-3">
-          <li class="reveal stagger-2 flex items-start gap-3">
-            <svg class="w-5 h-5 text-emerald mt-0.5 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
-            <span class="text-navy text-sm"><strong>No wires cut</strong> — the clip goes around the cable, not through it</span>
-          </li>
-          <li class="reveal stagger-3 flex items-start gap-3">
-            <svg class="w-5 h-5 text-emerald mt-0.5 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
-            <span class="text-navy text-sm"><strong>No power shutoff</strong> — your tenants won't even notice we're there</span>
-          </li>
-          <li class="reveal stagger-3 flex items-start gap-3">
-            <svg class="w-5 h-5 text-emerald mt-0.5 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
-            <span class="text-navy text-sm"><strong>No permits needed</strong> — this isn't electrical work, it's a monitoring device</span>
-          </li>
-          <li class="reveal stagger-4 flex items-start gap-3">
-            <svg class="w-5 h-5 text-emerald mt-0.5 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
-            <span class="text-navy text-sm"><strong>100% reversible</strong> — remove the clip and the panel goes back to how it was</span>
-          </li>
-        </ul>
       </div>
-      <div class="reveal order-1 md:order-2">
-        <div class="relative rounded-2xl overflow-hidden aspect-[4/3]">
-          <img src="{{ site.images.installation }}" alt="Clip-on current transformer being placed around electrical wire — no cutting, no modification" width="800" height="600" loading="lazy" class="w-full h-full object-cover">
-          <div class="absolute inset-0 bg-gradient-to-t from-navy/30 to-transparent"></div>
-          <div class="absolute bottom-5 left-5 right-5">
-            <p class="text-white text-xs font-medium bg-navy/70 backdrop-blur-sm rounded-lg px-3 py-2 border border-white/10">
-              <span class="text-emerald font-bold">Non-invasive:</span> the clip goes around the wire. Nothing gets cut or touched.
+
+      <div class="reveal">
+        <div class="flex items-start gap-5">
+          <div class="w-10 h-10 rounded-full bg-emerald text-navy font-bold text-lg flex items-center justify-center shrink-0 shadow-lg shadow-emerald/20">3</div>
+          <div>
+            <h3 class="font-semibold text-white text-lg mb-3">You open the dashboard.</h3>
+            <p class="text-text-muted leading-relaxed">
+              Same day. Each unit shows up on your phone. Hourly, daily, monthly usage. You'll finally know exactly what's happening in your building.
             </p>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
 
-{# ========== PROCESS DETAIL 3: MONITORING ========== #}
-<section class="py-20 sm:py-24 bg-surface-white">
-  <div class="max-w-6xl mx-auto px-5">
-    <div class="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
-      <div class="reveal">
-        <div class="relative rounded-2xl overflow-hidden aspect-[4/3]">
-          <img src="{{ site.images.monitoring }}" alt="Energy monitoring dashboard showing per-unit consumption data on a phone screen" width="800" height="600" loading="lazy" class="w-full h-full object-cover">
-          <div class="absolute inset-0 bg-gradient-to-t from-navy/30 to-transparent"></div>
-        </div>
-      </div>
-      <div>
-        <div class="reveal inline-flex items-center gap-2 bg-emerald/10 text-emerald text-sm font-semibold px-4 py-1.5 rounded-full mb-5">
-          <span class="w-6 h-6 rounded-full bg-emerald text-navy text-xs font-bold flex items-center justify-center">3</span>
-          Dashboard
-        </div>
-        <h2 class="reveal stagger-1 font-serif text-3xl sm:text-4xl text-navy leading-tight mb-5">
-          See Every Unit's Usage From Your Phone
-        </h2>
-        <p class="reveal stagger-2 text-text-muted text-lg leading-relaxed mb-6">
-          Each meter connects to the internet and pushes data to a live dashboard. You see exactly what every unit consumes — hourly, daily, monthly — without setting foot in the building.
+    <div class="reveal mt-14">
+      <div class="bg-emerald/10 rounded-xl py-5 px-6">
+        <p class="text-text-muted leading-relaxed">
+          That's it. No electrician. No permits. No power shutoff. If you ever want to take the meters off, I unclip them and your panel looks exactly like it did before.
         </p>
-        <ul class="space-y-3">
-          <li class="reveal stagger-2 flex items-start gap-3">
-            <svg class="w-5 h-5 text-emerald mt-0.5 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
-            <span class="text-navy text-sm"><strong>24/7 online dashboard</strong> — all units in one screen, phone or desktop</span>
-          </li>
-          <li class="reveal stagger-3 flex items-start gap-3">
-            <svg class="w-5 h-5 text-emerald mt-0.5 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
-            <span class="text-navy text-sm"><strong>Monthly reports ready to forward</strong> — PDF summaries for billing or lease attachments</span>
-          </li>
-          <li class="reveal stagger-3 flex items-start gap-3">
-            <svg class="w-5 h-5 text-emerald mt-0.5 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
-            <span class="text-navy text-sm"><strong>Spike alerts</strong> — get notified if a unit's consumption jumps unexpectedly</span>
-          </li>
-          <li class="reveal stagger-4 flex items-start gap-3">
-            <svg class="w-5 h-5 text-emerald mt-0.5 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
-            <span class="text-navy text-sm"><strong>Tenant access</strong> — each tenant sees their own usage, ending "it wasn't me" disputes</span>
-          </li>
-        </ul>
       </div>
     </div>
   </div>
 </section>
 
-{# ========== WHAT AN INSTALLATION LOOKS LIKE (replaces testimonials) ========== #}
+{# ========== WHAT IT ACTUALLY LOOKS LIKE ========== #}
 <section class="py-20 sm:py-28 bg-surface">
   <div class="max-w-5xl mx-auto px-5">
-    <div class="text-center mb-14">
-      <div class="accent-line mx-auto mb-6 reveal"></div>
+    <div class="mb-14">
+      <div class="accent-line mb-6 reveal"></div>
       <h2 class="reveal font-serif text-3xl sm:text-4xl text-navy leading-tight mb-5" style="text-wrap: balance;">
-        What an Installation Looks Like
+        What It Actually Looks Like
       </h2>
-      <p class="reveal stagger-1 text-text-muted text-lg max-w-2xl mx-auto">
-        This is all we do — a clip around the wire. Nothing else.
-      </p>
     </div>
 
     <div class="grid md:grid-cols-2 gap-6">
       {# Before card #}
       <div class="reveal stagger-1 relative rounded-2xl overflow-hidden aspect-[4/3] bg-navy-light border border-white/10">
-        <img src="{{ site.images.installation }}" alt="Standard electrical panel before sub-meter installation — no modifications visible" width="800" height="600" loading="lazy" class="w-full h-full object-cover opacity-80">
+        <img src="{{ site.images.installation }}" alt="Standard electrical panel before sub-meter installation" width="800" height="600" loading="lazy" class="w-full h-full object-cover opacity-80">
         <div class="absolute inset-0 bg-gradient-to-t from-navy/70 to-transparent"></div>
         <div class="absolute bottom-0 left-0 right-0 p-6">
           <span class="inline-block bg-navy/80 backdrop-blur-sm text-text-muted text-xs font-semibold uppercase tracking-wider px-3 py-1 rounded-full mb-2">Before</span>
-          <p class="text-white font-semibold">Your panel, exactly as it is today</p>
-          <p class="text-text-muted text-sm">One meter feeds the whole building. You pay everything.</p>
+          <p class="text-white font-semibold">Your panel. One meter. You pay everything.</p>
+          <p class="text-text-muted text-sm">No idea who uses what.</p>
         </div>
       </div>
 
       {# After card #}
       <div class="reveal stagger-2 relative rounded-2xl overflow-hidden aspect-[4/3] bg-navy-light border border-emerald/20">
-        <img src="{{ site.images.monitoring }}" alt="Electrical panel with clip-on current transformers installed — no wires cut, no modifications to original wiring" width="800" height="600" loading="lazy" class="w-full h-full object-cover opacity-80">
+        <img src="{{ site.images.monitoring }}" alt="Electrical panel with clip-on current transformers installed" width="800" height="600" loading="lazy" class="w-full h-full object-cover opacity-80">
         <div class="absolute inset-0 bg-gradient-to-t from-navy/70 to-transparent"></div>
         <div class="absolute bottom-0 left-0 right-0 p-6">
           <span class="inline-block bg-emerald/90 text-navy text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full mb-2">After</span>
-          <p class="text-white font-semibold">Same panel. Clip-on meters added.</p>
-          <p class="text-text-muted text-sm">Each unit is now measured individually. Remove the clips anytime — zero trace.</p>
+          <p class="text-white font-semibold">Same panel. Small clamps added.</p>
+          <p class="text-text-muted text-sm">Each unit measured separately. Remove them anytime — zero trace.</p>
         </div>
-      </div>
-    </div>
-
-    <div class="reveal mt-8 grid sm:grid-cols-3 gap-4 text-center">
-      <div class="bg-surface-white rounded-xl p-5 border border-slate-100">
-        <p class="text-2xl mb-1">0</p>
-        <p class="text-text-muted text-sm">Wires cut</p>
-      </div>
-      <div class="bg-surface-white rounded-xl p-5 border border-slate-100">
-        <p class="text-2xl mb-1">0</p>
-        <p class="text-text-muted text-sm">Holes drilled</p>
-      </div>
-      <div class="bg-surface-white rounded-xl p-5 border border-slate-100">
-        <p class="text-2xl mb-1">0</p>
-        <p class="text-text-muted text-sm">Permits required</p>
       </div>
     </div>
   </div>
 </section>
 
-{# ========== GUARANTEE ========== #}
-<section class="py-16 sm:py-20 bg-surface-white">
+{# ========== COST ========== #}
+<section class="py-20 sm:py-24 bg-surface-white">
   <div class="max-w-3xl mx-auto px-5">
-    <div class="reveal relative bg-navy rounded-2xl p-8 sm:p-12 text-center grain overflow-hidden">
-      <div class="absolute top-0 left-1/2 -translate-x-1/2 w-64 h-64 bg-emerald/10 rounded-full blur-[100px] pointer-events-none"></div>
-      <div class="relative z-10">
-        <div class="w-16 h-16 rounded-full bg-emerald/15 flex items-center justify-center mx-auto mb-6">
-          <svg class="w-8 h-8 text-emerald" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/></svg>
-        </div>
-        <h2 class="font-serif text-2xl sm:text-3xl text-white leading-tight mb-4">
-          Zero-Risk Guarantee
-        </h2>
-        <p class="text-text-muted text-lg leading-relaxed max-w-xl mx-auto mb-2">
-          If sub-metering doesn't work for your property, we'll tell you in 15 minutes and you pay nothing.
-        </p>
-        <p class="text-text-muted text-base">
-          No commitment. No pressure. No follow-up calls.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
-{# ========== WHO'S BEHIND THIS ========== #}
-<section class="py-20 sm:py-24 bg-surface">
-  <div class="max-w-4xl mx-auto px-5">
-    <div class="text-center mb-12">
-      <div class="accent-line mx-auto mb-6 reveal"></div>
-      <h2 class="reveal font-serif text-3xl sm:text-4xl text-navy leading-tight">
-        Who's Behind HamiltonVolt
+    <div class="mb-8">
+      <div class="accent-line mb-6 reveal"></div>
+      <h2 class="reveal font-serif text-3xl sm:text-4xl text-navy leading-tight mb-5">
+        What does it cost?
       </h2>
     </div>
 
-    <div class="reveal stagger-1 bg-surface-white rounded-2xl p-8 sm:p-10 border border-slate-100 max-w-2xl mx-auto">
-      <div class="flex flex-col sm:flex-row items-center sm:items-start gap-6">
+    <div class="reveal space-y-6">
+      <p class="text-text-muted text-lg leading-relaxed">
+        Typical range is <span class="text-navy font-semibold">{{ site.pricing.perUnit }} per unit</span> depending on your panel. A fourplex usually runs {{ site.pricing.fourplexTotal }} total.
+      </p>
+      <p class="text-text-muted text-lg leading-relaxed">
+        Most landlords make that back in {{ site.pricing.roiMonths }} months.
+      </p>
+      <p class="text-text-muted text-lg leading-relaxed">
+        I give you the exact number during the visit — before you decide anything. No surprise invoices, no add-ons.
+      </p>
+    </div>
+  </div>
+</section>
+
+{# ========== WHO I AM ========== #}
+<section class="py-20 sm:py-24 bg-surface">
+  <div class="max-w-3xl mx-auto px-5">
+    <div class="mb-10">
+      <div class="accent-line mb-6 reveal"></div>
+      <h2 class="reveal font-serif text-3xl sm:text-4xl text-navy leading-tight">
+        {{ site.founder.name }}
+      </h2>
+    </div>
+
+    <div class="reveal stagger-1 bg-surface-white rounded-2xl p-8 sm:p-10 border border-slate-100">
+      <div class="flex flex-col sm:flex-row items-start gap-6">
         {# Placeholder avatar — replace with real photo #}
         <div class="w-20 h-20 rounded-full bg-navy flex items-center justify-center shrink-0">
           <svg class="w-10 h-10 text-emerald" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"/></svg>
         </div>
-        <div>
-          <h3 class="font-semibold text-navy text-xl mb-1">{{ site.founder.name }}</h3>
-          <p class="text-text-muted text-sm mb-4">{{ site.founder.background }}</p>
+        <div class="space-y-4">
+          <p class="text-text-muted text-sm">I live in {{ site.founder.neighbourhood }}.</p>
           <p class="text-navy leading-relaxed">
-            "{{ site.founder.bio }}"
+            {{ site.founder.bio }}
+          </p>
+          <p class="text-navy leading-relaxed">
+            {{ site.founder.bio2 }}
+          </p>
+          <p class="text-navy leading-relaxed">
+            {{ site.founder.bio3 }}
           </p>
         </div>
       </div>
@@ -411,8 +268,8 @@ layout: base.njk
 {# ========== FAQ ========== #}
 <section class="py-20 sm:py-28 bg-surface-white">
   <div class="max-w-2xl mx-auto px-5">
-    <div class="text-center mb-14">
-      <div class="accent-line mx-auto mb-6 reveal"></div>
+    <div class="mb-14">
+      <div class="accent-line mb-6 reveal"></div>
       <h2 class="reveal font-serif text-3xl sm:text-4xl text-navy leading-tight">
         Common Questions
       </h2>
@@ -446,22 +303,19 @@ layout: base.njk
   <div class="relative z-10 max-w-3xl mx-auto px-5 text-center">
     <div class="accent-line mx-auto mb-6 reveal"></div>
     <h2 class="reveal font-serif text-3xl sm:text-4xl md:text-5xl text-white leading-tight mb-5" style="text-wrap: balance;">
-      Every Month You Wait Costs You $300+
+      Want to know if it works for your building?
     </h2>
     <p class="reveal stagger-1 text-text-muted text-lg mb-4 max-w-xl mx-auto">
-      Book a free inspection. If sub-metering doesn't make sense for your property, we'll tell you — and you'll have lost nothing but 15 minutes.
+      Message me on WhatsApp. Tell me how many units you have and roughly where the property is. I'll set up a time to come look at your panel.
     </p>
-    <p class="reveal stagger-1 text-text-muted text-sm mb-2">
-      No contracts &middot; No monthly fees &middot; Pays for itself in {{ site.pricing.roiMonths }} months
-    </p>
-    <p class="reveal stagger-1 text-emerald text-sm font-semibold mb-10">
-      We schedule {{ site.inspectionsPerWeek }} inspections per week.
+    <p class="reveal stagger-1 text-text-muted text-sm mb-10">
+      No contracts &middot; No monthly fees &middot; One-time install
     </p>
     <div class="reveal stagger-2 flex flex-col sm:flex-row items-center justify-center gap-4">
       <a href="{{ waUrl }}"
          class="cta-glow inline-flex items-center gap-2.5 bg-emerald hover:bg-emerald-dark text-navy font-bold text-lg px-8 py-4 rounded-xl">
         <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.5.5 0 00.611.611l4.458-1.495A11.952 11.952 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-2.387 0-4.607-.798-6.382-2.147l-.446-.344-2.635.883.883-2.635-.344-.446A9.935 9.935 0 012 12C2 6.486 6.486 2 12 2s10 4.486 10 10-4.486 10-10 10z"/></svg>
-        Book Free Inspection
+        Message on WhatsApp
       </a>
       <a href="tel:{{ site.phoneLink }}"
          class="inline-flex items-center gap-2.5 bg-white/10 hover:bg-white/15 text-white font-semibold text-lg px-8 py-4 rounded-xl border border-white/10 transition-colors duration-200">

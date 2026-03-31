@@ -20,7 +20,7 @@ export default {
   // WhatsApp number (digits only, with country code, no + sign)
   whatsappNumber: "12897998573",
   // Pre-filled WhatsApp message (pre-qualifies the lead)
-  whatsappMessage: "Hi HamiltonVolt, I have ___ units in ___ (neighbourhood) and I'd like to know if sub-metering works for my property.",
+  whatsappMessage: "Hi, I have ___ units in ___ and I'd like to know if sub-metering works for my building.",
 
   // ── Address & location ─────────────────────────────────
   address: {
@@ -55,8 +55,10 @@ export default {
   founder: {
     name: "[Your Name]",           // Replace with real name
     photo: "",                      // Replace with real photo path
-    bio: "I started HamiltonVolt after watching a friend lose thousands on hydro bills for his fourplex. The solution existed — clip-on meters that measure each unit — but nobody in Hamilton was making it easy for landlords to get started. That's what we do.",
-    background: "Hamilton-based. Background in property management and building systems.",
+    neighbourhood: "[your neighbourhood]", // Replace with real neighbourhood
+    bio: "I started doing this after a friend with a fourplex showed me his hydro bills — he was losing over $500/month and didn't know it. The fix existed. Clip-on meters that measure each unit. But nobody around here was making it easy for landlords to actually get it done.",
+    bio2: "That's what I do. I'm not a big company. I do sub-metering for landlords in Hamilton and Burlington. I show up, I tell you if it works, and if it does, I install it.",
+    bio3: "If you Google me you're not going to find a corporate website with stock photos of people in hardhats. You're going to find this page and my WhatsApp number. That's on purpose.",
   },
 
   // ── Pricing (shown in FAQ) ─────────────────────────────
@@ -65,9 +67,6 @@ export default {
     fourplexTotal: "$1,200–$2,000",
     roiMonths: "3–5",
   },
-
-  // ── Scheduling (for soft scarcity in CTA) ──────────────
-  inspectionsPerWeek: "5",
 
   // ── URLs ───────────────────────────────────────────────
   siteUrl: "https://voltshare.ca",
@@ -106,33 +105,38 @@ export default {
   faq: [
     {
       question: "Is sub-metering legal in Ontario?",
-      answer: "Yes. Ontario Regulation 394/10 under the <em>Electricity Act</em> gives landlords the right to install sub-meters and bill tenants for individual electricity usage, as long as tenants receive proper notice. We walk you through the entire compliance process.",
-      schemaAnswer: "Yes. Ontario Regulation 394/10 under the Electricity Act gives landlords the right to install sub-meters and bill tenants for individual electricity usage, as long as tenants receive proper notice."
+      answer: "Yes. Ontario Regulation 394/10 gives landlords the right to sub-meter and bill tenants for individual usage. You need to give proper notice — I provide the templates.",
+      schemaAnswer: "Yes. Ontario Regulation 394/10 gives landlords the right to sub-meter and bill tenants for individual usage. You need to give proper notice."
     },
     {
       question: "How much does it cost?",
-      answer: "Typical installations range from $300–$600 per unit depending on your panel layout. A fourplex usually costs $1,200–$2,000 total. Most landlords recoup the full cost in 3–5 months through reduced hydro bills. You get the exact number during the free inspection — no surprises after.",
-      schemaAnswer: "Typical installations range from $300–$600 per unit depending on your panel layout. A fourplex usually costs $1,200–$2,000 total. Most landlords recoup the full cost in 3–5 months through reduced hydro bills."
+      answer: "$300–$600 per unit depending on your panel layout. You get the exact price during the free visit. No surprises after.",
+      schemaAnswer: "$300–$600 per unit depending on your panel layout. You get the exact price during the free visit. No surprises after."
     },
     {
       question: "Do I need to change my leases?",
-      answer: 'For existing tenants with "electricity included" leases, you must provide written notice and reduce rent by a corresponding amount per Reg. 394/10. For new tenants, you simply write the lease without included electricity. We provide notice templates and walk you through the process.',
-      schemaAnswer: "For existing tenants with electricity included leases, you must provide written notice and reduce rent by a corresponding amount per Reg. 394/10. For new tenants, you simply write the lease without included electricity."
+      answer: 'For existing tenants with "electricity included," you give written notice and reduce rent by a corresponding amount. For new tenants, you just write the lease without included hydro. I give you the notice templates.',
+      schemaAnswer: "For existing tenants with electricity included, you give written notice and reduce rent by a corresponding amount. For new tenants, you just write the lease without included hydro."
     },
     {
-      question: "What types of properties work?",
-      answer: "Duplexes, triplexes, fourplexes, townhouse blocks, and apartment buildings across Hamilton and Burlington. If you have 2+ units sharing one meter, sub-metering will almost certainly work. The free inspection confirms it for your specific property.",
-      schemaAnswer: "Duplexes, triplexes, fourplexes, townhouse blocks, and apartment buildings. If you have 2 or more units sharing one meter, sub-metering will almost certainly work."
+      question: "What kinds of buildings work?",
+      answer: "Duplexes, triplexes, fourplexes, townhouse blocks, small apartments. If you've got 2+ units on one meter, it almost certainly works. The visit confirms it.",
+      schemaAnswer: "Duplexes, triplexes, fourplexes, townhouse blocks, small apartments. If you have 2 or more units on one meter, it almost certainly works."
     },
     {
-      question: "Do I need an electrician for this?",
-      answer: "No. Our meters are clip-on devices (current transformers) that clamp around the existing wire without touching it. Nothing gets cut, spliced, or modified. No permits, no electrical inspection, no licensed electrician required. It's closer to installing a smart thermostat than doing electrical work.",
-      schemaAnswer: "No. The meters are clip-on devices (current transformers) that clamp around the existing wire without touching it. Nothing gets cut, spliced, or modified. No permits or electrical inspection required."
+      question: "Do I need an electrician?",
+      answer: "No. The meters clamp around the wire without touching it. Nothing gets cut or modified. No permits, no inspection, no licensed trade required.",
+      schemaAnswer: "No. The meters clamp around the wire without touching it. Nothing gets cut or modified. No permits, no inspection, no licensed trade required."
     },
     {
-      question: "What if I want to remove them later?",
-      answer: "The clip comes off and your panel goes back to exactly how it was. Zero trace. There's nothing permanent about the installation — no holes, no rewiring, no residue. If you sell the property or change your mind, removal takes minutes.",
-      schemaAnswer: "The clip comes off and your panel goes back to exactly how it was. Zero trace. Nothing permanent about the installation."
+      question: "What if I want to remove them?",
+      answer: "The clip comes off. Your panel goes back to how it was. Nothing permanent — no holes, no rewiring. Takes minutes.",
+      schemaAnswer: "The clip comes off. Your panel goes back to how it was. Nothing permanent — no holes, no rewiring. Takes minutes."
+    },
+    {
+      question: "What if it doesn't work for my building?",
+      answer: "I tell you during the visit and you don't pay anything. Some panels aren't set up in a way that lets me isolate individual units. It happens. I'd rather tell you straight than waste your time.",
+      schemaAnswer: "I tell you during the visit and you don't pay anything. Some panels aren't set up in a way that lets me isolate individual units."
     }
   ],
 
